@@ -10121,6 +10121,18 @@
             }
         }
 
+        function on_ilerle() {
+            for(let i = 0; i < 10; i++) {
+                document.getElementById("next-btn").click();
+            }
+        }
+        
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "n" || event.key === "N") {
+                on_ilerle();
+            }
+        });
+
         loadQuestion();
     </script>
 </body>
